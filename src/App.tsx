@@ -4,7 +4,7 @@ import { Button } from "./components/ui/button"
 const App = () => {
   return (
     <div className=' text-3xl text-blue-400 font-thin'>
-      <Button variant={"outline"}>Clickme</Button>
+      <Button variant={"outline"}>Click Me</Button>
     </div>
   )
 }
