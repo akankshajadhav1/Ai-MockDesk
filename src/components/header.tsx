@@ -9,9 +9,9 @@ import ToggleContainer from "./toggle-container";
 const Header = () => {
  const {userId}=useAuth();
   return (
-    <div className={cn("w-full border-b duration-150  transition-all ease-in-out")}>
+    <header className={cn("w-full border-b duration-150  transition-all ease-in-out")}>
       <Container>
-        <div className="flex item-center gap-2  w-full ">
+        <div className="flex item-center gap-2  ">
           {/* logo section */}
            <LogoContainer/>
           {/* navigation section */}
@@ -34,7 +34,7 @@ const Header = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </header>
   )
 }
 

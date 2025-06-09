@@ -1,6 +1,6 @@
 import { MainRoutes } from '@/lib/helpers'
 import { cn } from '@/lib/utils'
-import React from 'react'
+
 import { NavLink } from 'react-router-dom'
 
 interface NavigationRouteProps{
