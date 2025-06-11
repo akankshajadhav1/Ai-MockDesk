@@ -21,7 +21,7 @@ import {
 } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { ChatSession } from "@google/generative-ai";
+
 import { chatSession } from "@/scripts";
 import {
   addDoc,
