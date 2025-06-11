@@ -6,6 +6,7 @@ import NavigationRoute from "./navigationRoute";
 import { NavLink } from "react-router-dom";
 import ProfileContainer from "./profile-container";
 import ToggleContainer from "./toggle-container";
+import ThemeToggle from "@/routes/themeToggler";
 const Header = () => {
   const { userId } = useAuth();
   return (
@@ -14,36 +15,38 @@ const Header = () => {
         " mr-4 w-full border-b duration-150  transition-all ease-in-out"
       )}
     >
-      <Container>
-        <div className=" flex item-center gap-2  ">
-          {/* logo section */}
-          <LogoContainer />
-          {/* navigation section */}
-          <nav className="hidden md:flex items-center gap-3">
-            <NavigationRoute />
-            {userId && (
-              <NavLink
-                to={"/generate"}
-                className={({ isActive }) =>
-                  cn(
-                    "text-base text-neutral-600 ",
-                    isActive && "text-neutral-900 font-semibold"
-                  )
-                }
-              >
-                Take an Interview
-              </NavLink>
-            )}
-          </nav>
+      {/* <Container> */}
+      <div className="  flex item-center gap-2  ">
+        {/* logo section */}
+        <LogoContainer />
+        {/* navigation section */}
+        <nav className="hidden md:flex items-center gap-3">
+          <NavigationRoute />
+          {userId && (
+            <NavLink
+              to={"/generate"}
+              className={({ isActive }) =>
+                cn(
+                  "text-base text-neutral-600 dark:text-white",
+                  isActive && "text-neutral-900 font-semibold"
+                )
+              }
+            >
+              Take an Interview
+            </NavLink>
+          )}
+        </nav>
+        {/* profile section */}
+        <div className="ml-auto flex items-center gap-6 ">
           {/* profile section */}
-          <div className="ml-auto flex items-center gap-6 ">
-            {/* profile section */}
-            <ProfileContainer />
-            {/* mobile toggle section */}
-            <ToggleContainer />
-          </div>
+          <ProfileContainer />
+
+          <ThemeToggle />
+          {/* mobile toggle section */}
+          <ToggleContainer />
         </div>
-      </Container>
+      </div>
+      {/* </Container> */}
     </header>
   );
 };
