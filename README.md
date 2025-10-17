@@ -1,57 +1,5 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
 # 🎯 AI Mock Desk
 
 AI Mock Desk is an intelligent web application that simulates real-time mock interviews or skill assessments using **AI, webcam, and microphone** integration.  
@@ -103,6 +51,18 @@ It allows users to create profiles, answer interview questions, and receive **au
 
 
 ---
+# View
+
+<img width="1366" height="606" alt="front1" src="https://github.com/user-attachments/assets/9530b12b-fc10-4daf-82bd-288f48fdda58" />
+<img width="1366" height="601" alt="front2" src="https://github.com/user-attachments/assets/9078a3a3-0100-4a98-82b8-cc86458e8f2a" />
+
+<img width="1366" height="587" alt="front3" src="https://github.com/user-attachments/assets/91037724-8ef0-4f3b-84ba-f3cb656bbefc" />
+<img width="1366" height="597" alt="front4" src="https://github.com/user-attachments/assets/842a0609-3a65-4701-878a-b08d89ec2413" />
+<img width="1366" height="580" alt="front5" src="https://github.com/user-attachments/assets/5b97ef8c-c66e-4ee5-b9a4-c36dfb74cf8d" />
+<img width="1366" height="609" alt="front6" src="https://github.com/user-attachments/assets/a1bee6c6-15c7-4d39-80f8-2f06b3e794b1" />
+<img width="1366" height="583" alt="front8" src="https://github.com/user-attachments/assets/47980505-6457-4f34-b5be-5e2e234bc437" />
+<img width="1366" height="561" alt="front7" src="https://github.com/user-attachments/assets/eb707336-09fc-46ba-b397-ef229d1349da" />
+
 
 ## ⚙️ Installation & Setup
 
@@ -110,21 +70,13 @@ It allows users to create profiles, answer interview questions, and receive **au
 ```bash
 git clone https://github.com/your-username/ai-mock-desk.git
 cd ai-mock-desk
+----
+cd frontend
+npm install
 
-# View
+cd backend
+npm install
 
-<img width="1366" height="606" alt="front1" src="https://github.com/user-attachments/assets/674f69e8-8a4b-4498-9b0d-6f4c0bb0d901" />
 
-
-<img width="1366" height="601" alt="front2" src="https://github.com/user-attachments/assets/896d8d32-deeb-4c66-ab9f-4be007740a2f" />
-
-<img width="1366" height="587" alt="front3" src="https://github.com/user-attachments/assets/c41500ca-20ef-400c-86c2-ce82661b4cd4" />
-
-<img width="1366" height="597" alt="front4" src="https://github.com/user-attachments/assets/72d7e627-496e-4c45-aeae-573e4d17f6ea" />
-<img width="1366" height="580" alt="front5" src="https://github.com/user-attachments/assets/eb3913f7-128f-4b34-8a31-d9e320234ef0" />
-
-<img width="1366" height="609" alt="front6" src="https://github.com/user-attachments/assets/6a6bdcdd-2a88-47e5-aeb3-bbc1162bcd12" />
-<img width="1366" height="561" alt="front7" src="https://github.com/user-attachments/assets/edccbfe0-8cb6-4c8f-aa26-8c418364b833" />
-<img width="1366" height="583" alt="front8" src="https://github.com/user-attachments/assets/31143ec6-ec11-43eb-9aa3-82a81a5e38fc" />
 
 
